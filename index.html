@@ -1,11 +1,637 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Portfólio Acadêmico Profissional - Trajetória, conquistas, certificações e projetos.">
+    <title>Portfólio Acadêmico | Trajetória e Projetos</title>
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+    <!-- ELEMENTOS DE FUNDO INTEGRADOS (BLUR & FORMAS ABSTRATAS) -->
+    <div class="bg-blur-container" aria-hidden="true">
+        <div class="blur-shape shape-1"></div>
+        <div class="blur-shape shape-2"></div>
+        <div class="blur-shape shape-3"></div>
+        <div class="blur-shape shape-4"></div>
+    </div>
+
+    <!-- CABEÇALHO / NAVEGAÇÃO SUPERIOR -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#hero" class="logo">
+                <span class="logo-accent">A</span>cademic<span class="logo-dot">.</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu" aria-label="Navegação Principal">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#hero" class="nav-link active">Início</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Quem Sou</a></li>
+                    <li class="nav-item"><a href="#conquistas" class="nav-link">Conquistas</a></li>
+                    <li class="nav-item"><a href="#certificacoes" class="nav-link">Certificações</a></li>
+                    <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#trajetoria" class="nav-link">Trajetória</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- SEÇÃO HERO / APRESENTAÇÃO -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span> Trajetória Acadêmica 2025 — 2026
+                    </div>
+                    <h1 class="hero-title">
+                        Inovação, Tecnologia e <span class="text-gradient">Excelência Acadêmica</span>
+                    </h1>
+                    <p class="hero-description">
+                        Construindo uma jornada pautada na dedicação constante, no protagonismo científico e no desenvolvimento de soluções tecnológicas e sustentáveis.
+                    </p>
+                    <div class="hero-actions">
+                        <!-- LINK CONFIGURÁVEL: Substitua o href="#" pelo link do seu Currículo Lattes ou seção correspondente -->
+                        <a href="#trajetoria" class="btn btn-primary">
+                            Conheça minha trajetória
+                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a href="#projetos" class="btn btn-secondary">Ver projetos</a>
+                        
+                        <!-- LINK CONFIGURÁVEL: Insira a URL do seu Currículo Lattes no atributo href abaixo -->
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline" title="Consultar Currículo Lattes">
+                            <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            Lattes
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO QUEM SOU -->
+        <section class="section sobre-section" id="sobre">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Perfil Acadêmico</span>
+                    <h2 class="section-title">Quem Sou</h2>
+                </div>
+
+                <div class="sobre-grid">
+                    <div class="sobre-card glass-card reveal">
+                        <p class="sobre-text">
+                            Estudante com forte vocação acadêmica, atua de forma proativa no desenvolvimento de projetos que unem <strong>tecnologia, programação, marketing e sustentabilidade</strong>. Sua trajetória entre 2025 e 2026 reflete um compromisso contínuo com o aprendizado prático e a busca incessante por soluções inovadoras.
+                        </p>
+                        <p class="sobre-text">
+                            Com destaque no ambiente escolar através do alto desempenho acadêmico e liderança em projetos Maker e de Robótica, desenvolve competências técnicas em linguagem de programação, inteligência artificial e prototipagem de soluções de impacto real para a comunidade e feiras científicas.
+                        </p>
+                        
+                        <div class="sobre-tags">
+                            <span class="tag">Programação</span>
+                            <span class="tag">Robótica</span>
+                            <span class="tag">Inteligência Artificial</span>
+                            <span class="tag">Marketing</span>
+                            <span class="tag">Prototipagem 3D</span>
+                            <span class="tag">Pesquisa Científica</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CONQUISTAS ACADÊMICAS -->
+        <section class="section conquistas-section" id="conquistas">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Reconhecimento e Desempenho</span>
+                    <h2 class="section-title">Conquistas Acadêmicas</h2>
+                </div>
+
+                <div class="timeline-conquistas">
+                    <!-- ANO 2025 -->
+                    <div class="timeline-year-block reveal">
+                        <div class="year-badge">2025</div>
+                        <div class="cards-grid">
+                            <div class="card-conquista glass-card">
+                                <div class="card-period">1º Trimestre</div>
+                                <h3 class="card-title">Destaque Escolar</h3>
+                                <ul class="conquistas-list">
+                                    <li><strong>1º lugar</strong> — Melhor nota da turma</li>
+                                    <li><strong>2º lugar</strong> — Melhor nota do Ensino Médio</li>
+                                </ul>
+                                <div class="media-badge">Média: 95</div>
+                            </div>
+
+                            <div class="card-conquista glass-card">
+                                <div class="card-period">2º Trimestre</div>
+                                <h3 class="card-title">Excelência Acadêmica</h3>
+                                <ul class="conquistas-list">
+                                    <li><strong>1º lugar</strong> — Melhor nota da turma</li>
+                                    <li><strong>1º lugar</strong> — Melhor nota do Ensino Médio</li>
+                                </ul>
+                                <div class="media-badge">Média: 97</div>
+                            </div>
+
+                            <div class="card-conquista glass-card highlight-card">
+                                <div class="card-period">3º Trimestre</div>
+                                <h3 class="card-title">Aluna Laureada</h3>
+                                <p class="card-desc">Reconhecimento máximo pela dedicação exemplar e participação ativa nas atividades do colégio.</p>
+                                <div class="media-badge star-badge">Média Final: 100</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ANO 2026 -->
+                    <div class="timeline-year-block reveal">
+                        <div class="year-badge">2026</div>
+                        <div class="cards-grid">
+                            <div class="card-conquista glass-card">
+                                <div class="card-period">1º Trimestre</div>
+                                <h3 class="card-title">Manutenção da Excelência</h3>
+                                <ul class="conquistas-list">
+                                    <li><strong>1º lugar</strong> — Melhor nota da turma</li>
+                                    <li><strong>2º lugar</strong> — Melhor nota do Ensino Médio</li>
+                                </ul>
+                                <div class="media-badge">Média: 95</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CERTIFICAÇÕES E FORMAÇÕES -->
+        <section class="section certificacoes-section" id="certificacoes">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Capacitação Contínua</span>
+                    <h2 class="section-title">Certificações e Formações</h2>
+                </div>
+
+                <div class="certificacoes-grid">
+                    <!-- Certificação 1 -->
+                    <div class="cert-card glass-card reveal">
+                        <div class="cert-header">
+                            <span class="cert-hours">120 horas</span>
+                            <span class="cert-tag">Sustentabilidade</span>
+                        </div>
+                        <h3 class="cert-title">Central de Sustentabilidade — Ano I</h3>
+                        <p class="cert-institution">Instituição de Ensino</p>
+                        <!-- LINK CONFIGURÁVEL: Insira a URL real do certificado no atributo href -->
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="cert-link" title="Visualizar Certificado">
+                            Visualizar Certificado 
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Certificação 2 -->
+                    <div class="cert-card glass-card reveal">
+                        <div class="cert-header">
+                            <span class="cert-hours">182 horas</span>
+                            <span class="cert-tag">Programação</span>
+                        </div>
+                        <h3 class="cert-title">Formação em Programação</h3>
+                        <p class="cert-institution">Alura</p>
+                        <!-- LINK CONFIGURÁVEL: Insira a URL real do certificado no atributo href -->
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="cert-link" title="Visualizar Certificado">
+                            Visualizar Certificado 
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Certificação 3 -->
+                    <div class="cert-card glass-card reveal">
+                        <div class="cert-header">
+                            <span class="cert-hours">120 horas</span>
+                            <span class="cert-tag">Inteligência Artificial</span>
+                        </div>
+                        <h3 class="cert-title">Introdução à Utilização de IAs e ChatBots de Forma Produtiva</h3>
+                        <p class="cert-institution">SENAI Maringá — CTM</p>
+                        <!-- LINK CONFIGURÁVEL: Insira a URL real do certificado no atributo href -->
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="cert-link" title="Visualizar Certificado">
+                            Visualizar Certificado 
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Certificação 4 -->
+                    <div class="cert-card glass-card reveal">
+                        <div class="cert-header">
+                            <span class="cert-hours">2 horas</span>
+                            <span class="cert-tag">Imersão Tech</span>
+                        </div>
+                        <h3 class="cert-title">Imersão IA</h3>
+                        <p class="cert-institution">Alura</p>
+                        <!-- LINK CONFIGURÁVEL: Insira a URL real do certificado no atributo href -->
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="cert-link" title="Visualizar Certificado">
+                            Visualizar Certificado 
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO RESULTADOS E DESTAQUES (NÚMEROS) -->
+        <section class="section resultados-section">
+            <div class="container">
+                <div class="resultados-grid reveal">
+                    <div class="stat-card">
+                        <div class="stat-number">100</div>
+                        <div class="stat-label">Média Final (3º Trimestre)</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">182h</div>
+                        <div class="stat-label">Programação (Alura)</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">120h</div>
+                        <div class="stat-label">SENAI — IA e ChatBots</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">120h</div>
+                        <div class="stat-label">Central de Sustentabilidade</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO PROJETOS DE DESTAQUE -->
+        <section class="section projetos-section" id="projetos">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Aplicação Prática</span>
+                    <h2 class="section-title">Projetos em Destaque</h2>
+                </div>
+
+                <div class="projetos-wrapper">
+                    <!-- PROJETO PRINCIPAL: CLUBE MAKER DE ROBÓTICA -->
+                    <div class="projeto-card main-project glass-card reveal">
+                        <div class="project-badge">Destaque Principal | 2025 – 2026</div>
+                        <h3 class="project-title">Clube Maker de Robótica</h3>
+                        <p class="project-institution">Colégio Estadual Unidade Pólo | Apoio: CNPq e Universidade Estadual de Maringá (UEM)</p>
+                        
+                        <p class="project-desc">
+                            O Clube Maker de Robótica foi criado para incentivar os estudantes a aprender de forma prática, utilizando a tecnologia como ferramenta de aprendizado. O objetivo do clube é desenvolver soluções criativas envolvendo tecnologia, robótica, prototipagem e sustentabilidade.
+                        </p>
+                        
+                        <div class="project-subbox">
+                            <h4 class="subbox-title">Projeto em Desenvolvimento: Piezoeletricidade</h4>
+                            <p class="subbox-desc">
+                                Desenvolvimento de protótipos 3D e sistemas voltados para a geração de energia limpa através da piezoeletricidade, combinando pesquisa científica e prototipagem funcional.
+                            </p>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag-tech">Robótica</span>
+                            <span class="tag-tech">Prototipagem 3D</span>
+                            <span class="tag-tech">Sustentabilidade</span>
+                            <span class="tag-tech">Piezoeletricidade</span>
+                            <span class="tag-tech">Geração de Energia</span>
+                            <span class="tag-tech">Pesquisa & Desenvolvimento</span>
+                        </div>
+
+                        <!-- SUBSEÇÃO: APRESENTAÇÕES CIENTÍFICAS -->
+                        <div class="apresentacoes-block">
+                            <h4 class="apresentacoes-title">Apresentações Científicas</h4>
+                            <div class="apresentacoes-grid">
+                                <div class="apresentacao-item">
+                                    <span class="status-tag status-done">Concluído (2025)</span>
+                                    <h5>Paraná Faz Ciência</h5>
+                                    <p class="location">Guarapuava — PR</p>
+                                    <!-- LINK CONFIGURÁVEL: Insira o link para fotos, documentos ou certificados do evento -->
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="link-sm">Ver registros / documento →</a>
+                                </div>
+
+                                <div class="apresentacao-item">
+                                    <span class="status-tag status-upcoming">Programado (2026)</span>
+                                    <h5>FECCI</h5>
+                                    <p class="location">Curitiba — PR</p>
+                                    <!-- LINK CONFIGURÁVEL: Insira o link das informações da participação futura -->
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="link-sm">Detalhes da apresentação →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-actions">
+                            <!-- LINK CONFIGURÁVEL: Insira a URL do projeto ou repositório -->
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Página do Projeto</a>
+                            <!-- LINK CONFIGURÁVEL: Insira o link da galeria de fotos/vídeos -->
+                            <a href="#galeria" class="btn btn-secondary">Ver Galeria de Fotos</a>
+                        </div>
+                    </div>
+
+                    <!-- PROJETO SECUNDÁRIO: AGÊNCIA JÚNIOR DE MARKETING -->
+                    <div class="projeto-card glass-card reveal">
+                        <div class="project-badge">Experiência Prática | 2025</div>
+                        <h3 class="project-title">Agência Júnior de Marketing</h3>
+                        <p class="project-desc">
+                            Atuação prática em comunicação, produção de conteúdo estratégico, gestão de mídias e desenvolvimento de projetos mercadológicos e acadêmicos.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag-tech">Marketing</span>
+                            <span class="tag-tech">Comunicação</span>
+                            <span class="tag-tech">Criação de Conteúdo</span>
+                            <span class="tag-tech">Gestão de Projetos</span>
+                        </div>
+                        <div class="project-actions">
+                            <!-- LINK CONFIGURÁVEL: Insira a URL do Instagram da Agência -->
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Instagram</a>
+                            <!-- LINK CONFIGURÁVEL: Insira o link do site ou portfólio de resultados -->
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Resultados & Portfólio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO TRAJETÓRIA ACADÊMICA (TIMELINE) -->
+        <section class="section trajetoria-section" id="trajetoria">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Evolução Contínua</span>
+                    <h2 class="section-title">Trajetória Acadêmica (2025 → 2026)</h2>
+                </div>
+
+                <div class="main-timeline reveal">
+                    <!-- Marco 1 -->
+                    <div class="timeline-node">
+                        <div class="node-year">2025 — Início</div>
+                        <div class="node-content glass-card">
+                            <h4>Primeiras Conquistas e Ingressos</h4>
+                            <p>Desempenho acadêmico de excelência (1º e 2º trimestres). Ingresso na Agência Júnior de Marketing e início das atividades no Clube Maker de Robótica.</p>
+                        </div>
+                    </div>
+
+                    <!-- Marco 2 -->
+                    <div class="timeline-node">
+                        <div class="node-year">2025 — Expansão</div>
+                        <div class="node-content glass-card">
+                            <h4>Pesquisa e Reconhecimento</h4>
+                            <p>Desenvolvimento da pesquisa em Piezoeletricidade. Apresentação no evento <strong>Paraná Faz Ciência (Guarapuava)</strong>. Titulação de Aluna Laureada no 3º Trimestre (Média 100).</p>
+                        </div>
+                    </div>
+
+                    <!-- Marco 3 -->
+                    <div class="timeline-node">
+                        <div class="node-year">2026 — Consolidação</div>
+                        <div class="node-content glass-card">
+                            <h4>Protagonismo Científico</h4>
+                            <p>Manutenção das médias de topo (95 no 1º trimestre). Continuidade dos protótipos 3D de piezoeletricidade no Clube Maker e preparação para a <strong>FECCI (Curitiba)</strong>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Marco 4 -->
+                    <div class="timeline-node">
+                        <div class="node-year">2026 — Visão de Futuro</div>
+                        <div class="node-content glass-card">
+                            <h4>Maturidade Profissional</h4>
+                            <p>Consolidação do perfil técnico-científico, formalização através do Currículo Lattes e preparação para o ingresso no ensino superior e mercado de tecnologia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CURRÍCULO LATTES -->
+        <section class="section lattes-section">
+            <div class="container">
+                <div class="lattes-box glass-card reveal">
+                    <div class="lattes-icon" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <div class="lattes-info">
+                        <h3 class="lattes-title">Registro Científico e Acadêmico</h3>
+                        <p class="lattes-desc">Confira o histórico completo de pesquisas, participações em eventos e produções acadêmicas diretamente na plataforma oficial do CNPq.</p>
+                    </div>
+                    <div class="lattes-action">
+                        <!-- LINK CONFIGURÁVEL: Insira a URL real do seu Currículo Lattes no atributo href abaixo -->
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                            Consultar Currículo Lattes
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO GALERIA DE EXPERIÊNCIAS -->
+        <section class="section galeria-section" id="galeria">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Registros Visuais</span>
+                    <h2 class="section-title">Galeria de Experiências</h2>
+                </div>
+
+                <div class="galeria-grid">
+                    <!-- Item 1 da Galeria -->
+                    <div class="galeria-card glass-card reveal">
+                        <div class="galeria-img-placeholder">
+                            <!-- INSTRUÇÃO: Substitua a tag abaixo por <img src="caminho-da-sua-foto.jpg" alt="Apresentação do Projeto"> -->
+                            <div class="placeholder-content">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                                <span>Paraná Faz Ciência (Guarapuava)</span>
+                            </div>
+                        </div>
+                        <div class="galeria-overlay">
+                            <!-- LINK CONFIGURÁVEL: Insira a URL da imagem em alta resolução ou do álbum -->
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-gallery">Visualizar Registro</a>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 da Galeria -->
+                    <div class="galeria-card glass-card reveal">
+                        <div class="galeria-img-placeholder">
+                            <!-- INSTRUÇÃO: Substitua a tag abaixo por <img src="caminho-da-sua-foto.jpg" alt="Protótipo 3D"> -->
+                            <div class="placeholder-content">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                                <span>Prototipagem 3D & Robótica</span>
+                            </div>
+                        </div>
+                        <div class="galeria-overlay">
+                            <!-- LINK CONFIGURÁVEL: Insira a URL da imagem em alta resolução ou do álbum -->
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-gallery">Visualizar Registro</a>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 da Galeria -->
+                    <div class="galeria-card glass-card reveal">
+                        <div class="galeria-img-placeholder">
+                            <!-- INSTRUÇÃO: Substitua a tag abaixo por <img src="caminho-da-sua-foto.jpg" alt="Atividades Acadêmicas"> -->
+                            <div class="placeholder-content">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                                <span>Atividades e Certificações</span>
+                            </div>
+                        </div>
+                        <div class="galeria-overlay">
+                            <!-- LINK CONFIGURÁVEL: Insira a URL da imagem em alta resolução ou do álbum -->
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-gallery">Visualizar Registro</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CONTATO PROFISSIONAL -->
+        <section class="section contato-section" id="contato">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Canais de Comunicação</span>
+                    <h2 class="section-title">Contato Profissional</h2>
+                </div>
+
+                <div class="contato-grid reveal">
+                    <!-- LINK CONFIGURÁVEL: Substitua pelo seu e-mail real -->
+                    <a href="mailto:seuemail@dominio.com" class="contato-card glass-card">
+                        <div class="contato-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div class="contato-details">
+                            <span class="contato-label">E-mail</span>
+                            <!-- TEXTO CONFIGURÁVEL: Insira o endereço de e-mail visível -->
+                            <span class="contato-value">seuemail@dominio.com</span>
+                        </div>
+                    </a>
+
+                    <!-- LINK CONFIGURÁVEL: Substitua o href pelo seu perfil no LinkedIn -->
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="contato-card glass-card">
+                        <div class="contato-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </div>
+                        <div class="contato-details">
+                            <span class="contato-label">LinkedIn</span>
+                            <span class="contato-value">Conectar via LinkedIn</span>
+                        </div>
+                    </a>
+
+                    <!-- LINK CONFIGURÁVEL: Substitua o href pelo seu perfil no GitHub -->
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="contato-card glass-card">
+                        <div class="contato-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </div>
+                        <div class="contato-details">
+                            <span class="contato-label">GitHub</span>
+                            <span class="contato-value">Ver Repositórios</span>
+                        </div>
+                    </a>
+
+                    <!-- LINK CONFIGURÁVEL: Substitua o href pelo seu perfil no Instagram -->
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="contato-card glass-card">
+                        <div class="contato-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </div>
+                        <div class="contato-details">
+                            <span class="contato-label">Instagram</span>
+                            <span class="contato-value">Seguir Perfil</span>
+                        </div>
+                    </a>
+
+                    <!-- LINK CONFIGURÁVEL: Substitua o href pelo seu link do Lattes -->
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="contato-card glass-card">
+                        <div class="contato-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <div class="contato-details">
+                            <span class="contato-label">Currículo Lattes</span>
+                            <span class="contato-value">Plataforma Lattes</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ (FOOTER) -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <a href="#hero" class="logo">
+                    <span class="logo-accent">A</span>cademic<span class="logo-dot">.</span>
+                </a>
+                <p>Portfólio Acadêmico Pessoal — Excelência, Tecnologia e Pesquisa.</p>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; <span id="year">2026</span> Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT JAVASCRIPT PURO (INTERAÇÕES E ANIMAÇÕES) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Atualizar Ano no Rodapé
+            const yearEl = document.getElementById('year');
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+            // Menu Mobile Toggle
+            const mobileToggle = document.getElementById('mobile-toggle');
+            const navMenu = document.getElementById('nav-menu');
+
+            if (mobileToggle && navMenu) {
+                mobileToggle.addEventListener('click', () => {
+                    const expanded = mobileToggle.getAttribute('aria-expanded') === 'true';
+                    mobileToggle.setAttribute('aria-expanded', !expanded);
+                    mobileToggle.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+
+                // Fechar menu ao clicar num link
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                        mobileToggle.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+
+            // Mudança no Header ao rolar a página
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // IntersectionObserver para Animações de Scroll (Fade/Slide in)
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        // Opcional: Desobservar após animar
+                        // observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal').forEach(el => {
+                revealObserver.observe(el);
+            });
+        });
+    </script>
 </body>
 </html>
