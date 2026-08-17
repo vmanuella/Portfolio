@@ -1,5 +1,5 @@
 /* ==========================================================================
-   DESIGN SYSTEM & VARIÁVEIS CSS
+   DESIGN SYSTEM & VARIAVEIS CSS
    ========================================================================== */
 :root {
     /* Paleta de Cores Principais */
@@ -16,7 +16,7 @@
     --text-secondary: #475569;
     --text-muted: #94a3b8;
     
-    /* Glassmorphism e Transparências */
+    /* Glassmorphism e Transparencias */
     --glass-bg: rgba(255, 255, 255, 0.75);
     --glass-border: rgba(226, 232, 240, 0.8);
     --glass-shadow: 0 10px 30px -10px rgba(2, 132, 199, 0.08);
@@ -129,7 +129,7 @@ img {
 }
 
 /* ==========================================================================
-   LAYOUT REUTILIZÁVEL & GLASSMORPHISM
+   LAYOUT REUTILIZAVEL & GLASSMORPHISM
    ========================================================================== */
 .container {
     width: 100%;
@@ -159,7 +159,7 @@ img {
 }
 
 /* ==========================================================================
-   TIPOGRAFIA & CABEÇALHOS DE SEÇÃO
+   TIPOGRAFIA & CABECALHOS DE SECAO
    ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
@@ -196,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   BOTÕES & ELEMENTOS INTERATIVOS
+   BOTOES & ELEMENTOS INTERATIVOS
    ========================================================================== */
 .btn {
     display: inline-flex;
@@ -254,7 +254,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   NAVEGAÇÃO (HEADER)
+   NAVEGACAO (HEADER)
    ========================================================================== */
 .header {
     position: fixed;
@@ -453,7 +453,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   CONQUISTAS ACADÊMICAS
+   CONQUISTAS ACADEMICAS
    ========================================================================== */
 .timeline-year-block {
     margin-bottom: 3.5rem;
@@ -548,7 +548,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   CERTIFICAÇÕES
+   CERTIFICACOES
    ========================================================================== */
 .certificacoes-grid {
     display: grid;
@@ -723,7 +723,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-secondary);
 }
 
-/* Apresentações Científicas dentro do Projeto */
+/* Apresentacoes Cientificas dentro do Projeto */
 .apresentacoes-block {
     margin-top: 2rem;
     padding-top: 2rem;
@@ -792,7 +792,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   TRAJETÓRIA ACADÊMICA (TIMELINE)
+   TRAJETORIA ACADEMICA (TIMELINE)
    ========================================================================== */
 .main-timeline {
     position: relative;
@@ -853,7 +853,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   CURRÍCULO LATTES
+   CURRICULO LATTES
    ========================================================================== */
 .lattes-box {
     padding: 3rem 2.5rem;
@@ -892,7 +892,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   GALERIA DE EXPERIÊNCIAS
+   GALERIA DE EXPERIENCIAS
    ========================================================================== */
 .galeria-grid {
     display: grid;
@@ -1020,7 +1020,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   RODAPÉ (FOOTER)
+   RODAPE (FOOTER)
    ========================================================================== */
 .footer {
     padding: 3rem 0;
@@ -1048,7 +1048,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   ANIMAÇÕES DE ENTRADA (SCROLL REVEAL)
+   ANIMACOES DE ENTRADA (SCROLL REVEAL)
    ========================================================================== */
 .reveal {
     opacity: 0;
@@ -1062,7 +1062,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   RESPONSIVIDADE E ADAPTAÇÃO MOBILE
+   RESPONSIVIDADE E ADAPTACAO MOBILE
    ========================================================================== */
 @media (max-width: 992px) {
     .hero-title {
