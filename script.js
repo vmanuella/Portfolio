@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // ==========================================
+    
     // 1. CONFIGURAÇÕES E DETECÇÃO DE DISPOSITIVO
-    // ==========================================
+    
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
     const enableMouseEffects = !isTouchDevice && !prefersReducedMotion;
 
-    // ==========================================
+  
     // 2. ATUALIZAÇÃO DO ANO NO RODAPÉ
     // ==========================================
     const yearSpan = document.getElementById('current-year');
