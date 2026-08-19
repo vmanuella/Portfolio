@@ -1,4 +1,4 @@
-<!-- JAVASCRIPT PURO INTEGRADO -->
+ <!-- JAVASCRIPT PURO INTEGRADO -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // 1. ATUALIZAÇÃO AUTOMÁTICA DO ANO NO RODAPÉ
