@@ -8,7 +8,8 @@
 
     <!-- CSS Principal -->
     <link rel="stylesheet" href="style.css">
-     <script scr="index.js"></script>
+    <script scr="script.js"></script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +29,7 @@
     <header class="header" id="header">
         <div class="container header-container">
             <a href="#hero" class="logo">
-                <span class="logo-accent">V</span>Manuella<span class="logo-dot">.</span>
+                <span class="logo-accent">V</span>Manuella<span class="logo-dot">φ</span>
             </a>
 
             <nav class="nav-menu" id="nav-menu" aria-label="Navegação Principal">
@@ -574,65 +575,5 @@
         </div>
     </footer>
 
-    <!-- SCRIPT JAVASCRIPT PURO (INTERAÇÕES E ANIMAÇÕES) -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Atualizar Ano no Rodapé
-            const yearEl = document.getElementById('year');
-            if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-            // Menu Mobile Toggle
-            const mobileToggle = document.getElementById('mobile-toggle');
-            const navMenu = document.getElementById('nav-menu');
-
-            if (mobileToggle && navMenu) {
-                mobileToggle.addEventListener('click', () => {
-                    const expanded = mobileToggle.getAttribute('aria-expanded') === 'true';
-                    mobileToggle.setAttribute('aria-expanded', !expanded);
-                    mobileToggle.classList.toggle('active');
-                    navMenu.classList.toggle('active');
-                });
-
-                // Fechar menu ao clicar num link
-                document.querySelectorAll('.nav-link').forEach(link => {
-                    link.addEventListener('click', () => {
-                        mobileToggle.classList.remove('active');
-                        navMenu.classList.remove('active');
-                        mobileToggle.setAttribute('aria-expanded', 'false');
-                    });
-                });
-            }
-
-            // Mudança no Header ao rolar a página
-            const header = document.getElementById('header');
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-            });
-
-            // IntersectionObserver para Animações de Scroll (Fade/Slide in)
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.15
-            };
-
-            const revealObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                        // Opcional: Desobservar após animar
-                        // observer.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
-
-            document.querySelectorAll('.reveal').forEach(el => {
-                revealObserver.observe(el);
-            });
-        });
-    </script>
+   
 </body>
